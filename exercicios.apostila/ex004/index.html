@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        body{
+            font: 12pt;
+        }
+        button{
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        /* criamos a função inicio() e um bloco com {}. Dentro declaramos duas variáveis: nome e res. A variável nome vai receber o resultado de um prompt(). */
+        function inicio(){
+            let nome = window.prompt('Qual é seu nome?')
+            let res = window.document.getElementById('resultado')/* Iniciando a linha, usamos a instrução let que vai criar uma variável chamada res (na verdade, o que é criado é um objeto. Mas por enquanto pense em um objeto como uma variável especial). “Na janela do navegador (window), dentro do documento atual (document), pegue o elemento que tenha o id (getElementById) com o nome ‘resultado’.” */ 
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;` /*  Ela vai modificar o “HTML que está dentro” (innerHTML) da section.  Dá só uma olhada na linha 22 do nosso código HTML. Esse é o parágrafo que vai aparecer no navegador quando abrirmos o index.html. Porém, a linha 29 vai mudar esse parágrafo quando o botão da linha 20 for clicado.*/
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background-color: rgb(114, 114, 179);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(231, 231, 15);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <hr>
+    <p>Já me livrei da maldição.</p>
+    <script>
+       var n1 = Number(window.prompt('Digite um número: '))// Window.prompt retorna uma string mesmo que seja inserido um número.
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2 // para converter uma string em número usar 'Number.parseInt' para números interios e 'Number.parseFloat' para número reais. As letras maiúsculas devem obrigatoriamente ser maúsculas (o N de Number e I de Int e F de Float).
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)//Concatenação
+       // (number + number) para adição 
+       // (string + string) para concatenação
+    </script>
+</body>
+</html>
